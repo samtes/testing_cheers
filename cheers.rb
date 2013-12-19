@@ -6,24 +6,9 @@
 # ABBY’s just GRAND!
 # When given the input of “Abby”. Note: the “a” vs. “an”
 
-puts "What's your name?"
-name = gets
-puts "Thanks, "+name
-puts "This is where the cheer would go"
+# puts "I got these arguments: #{ARGV.join(", ")}"
 
-
-# mychar = 'a'
-# mychar == 'a' #=> true
-
-count = name.length
-i = 0
-while i < count do
-  puts name[i]
-  i = i + 1
-end
-
-puts "Or:"
-
+name = ARGV[0]
 name.each_char do |char|
-  puts char
+  puts "Give me a.. #{char.upcase}"
 end
